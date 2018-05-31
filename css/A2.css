@@ -1,0 +1,169 @@
+/*this css is used for the style of  html elements*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(../image/bodyBg8.jpg);
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    padding-left: 100px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-size: 28px;
+
+    font-weight: bolder;
+    position: absolute;
+    top: 0px;
+}
+
+#main {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#moveCount {
+    min-width: 180px;
+    height: 40px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: azure;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#moveCountLable {
+    font-weight: bolder;
+    width: 120px;
+}
+
+#moveCountNumber {
+    font-weight: bolder;
+    width: 30px;
+}
+
+#pictureBox {
+    width: 408px;
+    min-height: 408px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(100, 184, 247, 0.69);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.picturePart {
+    border-style: solid;
+    border-width: 1px;
+    border-color: azure;
+    width: 100px;
+    opacity: 0.9;
+    height: 100px;
+
+}
+
+.picturePart:hover {
+    border-color: bisque;
+    opacity: 1;
+}
+/*backgroun image*/
+.pictureNo0 {
+    background: url(../image/00.jpg) no-repeat;
+    background-size: 400px, 400px;
+}
+
+.pictureNo1 {
+    background: url(../image/01.jpg) no-repeat;
+    background-size: 400px, 400px;
+}
+
+.pictureNo2 {
+    background: url(../image/02.jpg) no-repeat;
+    background-size: 400px, 400px;
+}
+
+.pictureNo3 {
+    background: url(../image/03.jpg) no-repeat;
+    background-size: 400px, 400px;
+}
+
+.pictureNo4 {
+    background: url(../image/04.jpg) no-repeat;
+    background-size: 400px, 400px;
+}
+
+/*buttons*/
+#startButton,
+#changeImageButton {
+    width: 180px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #91e4f4;
+    box-shadow: 3px 4px 15px black;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+#startButton:hover,
+#changeImageButton:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/*tips and dialog*/
+#tip {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 40px;
+    background-color: rgb(123, 124, 100);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+    z-index: 9999;
+}
+
+#winBox {
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: fantasy;
+    display: none;
+}
